@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+}
+
+
+.box{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.829),rgba(0, 0, 0, 0.781)),url(bridge-53769_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+    
+.heading{
+    color: white;
+    font-size: 20px;
+}
+
+.form{
+    width: 400px;
+    height: 550px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.80);
+    perspective: 1000px;
+    padding: 30px;
+    
+}
+.name span{
+    color: rgb(37, 145, 24);
+}
+.content span{
+    color: rgb(58, 250, 36);
+    font-weight: bold;
+    font-size: 18px;
+}
+.name{
+    position: absolute;
+    left: 150px;
+    padding: 5px 0;
+    font-size: 14px;
+    margin: -3px;
+    height: 35px;
+    width: 185px;
+}
+
+.email{
+    position: absolute;
+    left: 120px;
+    padding: 5px 0;
+    font-size: 14px;
+    margin: -3px;
+    height: 35px;
+    width: 185px;
+}
+
+.book{
+    position: absolute;
+    left: 180px;
+    padding: 5px 0;
+    font-size: 14px;
+    margin: -3px;
+    height: 35px;
+    width: 185px;
+}
+
+.number{
+    position: absolute;
+    left: 150px;
+    padding: 5px 0;
+    font-size: 14px;
+    margin: -3px;
+    height: 35px;
+    width: 185px;
+}
+
+
+.sel{
+    position: absolute;
+    left: 250px;
+    padding: 5px 0;
+    font-size: 14px;
+    margin: -3px;
+    height: 35px;
+    width: 185px;
+}
+
+.r{
+    width: auto;
+    color: #fff;
+}
+
+.submit{
+    width: 100px;
+    background: rgb(34, 145, 24);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    text-transform: uppercase;
+}
+
+.submit:hover{
+    background: teal;
+    transition: 0.5s ease;
+}

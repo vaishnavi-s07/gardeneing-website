@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Easy Learning | E-Learning website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="trialstyle.css">
+</head>
+<body>
+<div class="container">
+<div class="card">
+<div class="inner-box" id="card">
+<div class="card-front">
+    <h2> Login</h2>
+    <form action="login.php" method="post">
+        <input type="email" class="input-box" name="email" placeholder="Your Email Id" required>
+        <input type="password" class="input-box" name="password" placeholder="Enter Password" required>
+        <button type="submit" class="submit-btn" name="submit">Submit</button>
+        <input type="checkbox"><span>Remember Me</span>
+    </form>
+    <button type="button" class="btn" onclick="openRegister()">I'm New Here.</button>
+    <a href="#">Forgot Password</a>
+</div>                    
+<div class="card-back">
+    <h2>Register</h2>
+    <form action="register.php" method="post">
+        <input type="text" class="input-box" name="name" placeholder="Your Name" required>
+        <input type="email" class="input-box" name="email" placeholder="Your Email Id" required>
+        <input type="number" class="input-box" name="mobile number" placeholder="Contact Number" required>
+        <input type="password" class="input-box" name="password" placeholder="Enter Password" required>
+        <button type="submit" name="submit" class="submit-btn">Submit</button>
+        <!--<input type="checkbox"><span>Remember Me</span>-->
+    </form>
+    <button type="button" class="btn" onclick="openLogin()">I've an account.</button>
+    <a href="#">Forgot Password</a>
+</div>
+</div>
+</div>
+</div>
+    
+    <script>
+    var card = document.getElementById("card");
+        function openRegister(){
+            card.style.transform = "rotateY(-180deg)";
+        }
+        function openLogin(){
+            card.style.transform = "rotateY(0deg)";
+        }
+    </script>
+</body>
+</html>
